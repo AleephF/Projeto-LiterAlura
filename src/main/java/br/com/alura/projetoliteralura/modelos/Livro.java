@@ -12,7 +12,7 @@ public class Livro {
 
     private String titulo;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.MERGE)
     @JoinColumn(name = "autor_id")
     private Autor autor;
 

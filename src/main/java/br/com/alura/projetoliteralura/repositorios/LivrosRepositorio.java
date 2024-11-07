@@ -14,4 +14,6 @@ public interface LivrosRepositorio extends JpaRepository<Livro, Long> {
 
     @Query("SELECT a FROM Autor a WHERE a.anoDeNascimento <= :autorPorEpoca AND a.anoDeFalecimento >= :autorPorEpoca")
     List<Autor> autoresVivoPorEpoca(String autorPorEpoca);
+
+    List<Livro> findByIdiomaContainingIgnoreCase(String livroPorIdioma);
 }
