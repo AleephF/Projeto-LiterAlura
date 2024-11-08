@@ -33,7 +33,7 @@
 >  <td>Java</td>
 >  <td>Spring Boot</td>
 >  <td>Spring Data JPA</td>
->  <td>Postgres</td>
+>  <td>PostgreSQL</ td>
 >  <td>Postman</td>
 >  <td>API Gutendex</td>
 > </tr>
