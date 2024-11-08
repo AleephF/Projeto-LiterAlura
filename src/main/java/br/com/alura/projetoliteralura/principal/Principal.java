@@ -85,10 +85,10 @@ public class Principal {
                     autor.getNome(), autor.getAnoDeNascimento(), autor.getAnoDeFalecimento());
 
             if (autorExistente != null) {
-                livroLocalizado.setAutor(autorExistente);  // Associando o autor já persistido
+                livroLocalizado.setAutor(autorExistente);
             } else {
-                autorExistente = repositorioAutor.save(autor);  // Persistindo o novo autor
-                livroLocalizado.setAutor(autorExistente);  // Associando o novo autor ao livro
+                autorExistente = repositorioAutor.save(autor);
+                livroLocalizado.setAutor(autorExistente);
             }
 
             if (repositorio.existsByTitulo(livroLocalizado.getTitulo())) {
